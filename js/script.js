@@ -7,8 +7,8 @@ for (let i = 0; i < smoothScrollTrigger.length; i++) {
     let targetElement = document.getElementById(href.replace('#', ''))
     const rect = targetElement.getBoundingClientRect().top;
     const offset = window.pageYOffset;
-    // const gap = 0; //今回は固定ヘッダなし
-    // const target = rect + offset - gap;
+    const gap = 0; //今回は固定ヘッダなし
+    const target = rect + offset - gap;
     window.scrollTo ({
       top: target,
       behaivor: 'smooth',
