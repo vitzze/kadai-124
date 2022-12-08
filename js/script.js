@@ -11,7 +11,7 @@ for (let i = 0; i < smoothScrollTrigger.length; i++) {
     const target = rect + offset - gap;
     window.scrollTo ({
       top: target,
-      behaivor: 'smooth',
+      behavior: 'smooth',
     });
   });
 }
